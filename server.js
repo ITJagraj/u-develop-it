@@ -1,6 +1,6 @@
 const mysql = require('mysql2') //connect to the MYSQL Database
 const express = require('express');
-const inputCheck = require('./utils/inputCheck');
+const inputCheck = require('./__test__/utils/inputCheck');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
