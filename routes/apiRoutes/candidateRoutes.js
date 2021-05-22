@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../../db/connection');
-const inputCheck = require('../../utils/inputCheck');
+const inputCheck = require('../../inputCheck');
 
 
 // originally app.get('/api/candidates')
@@ -20,3 +20,5 @@ router.get('/candidates', (req, res) => {
   
   // originally app.delete('/api/candidate/:id')
   router.delete('/candidate/:id', (req, res) => {});
+
+  module.exports = router;
